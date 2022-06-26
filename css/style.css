@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root{
+    --darkcyan : hsl(158, 36%, 37%);
+    --verydarkcyan : #1B4031;
+    --cream : hsl(30, 38%, 92%);
+    --verydarkblue : hsl(212, 21%, 14%);
+    --darkgrayishblue : hsl(228, 12%, 48%);
+    --white : hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--cream);
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    height: 100vh;
+}
+main{
+    background-color: var(--white);
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+.sec-1 img {
+    max-width: 100%;
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+}
+.sec-2{
+    padding: 15px 20px 23px 20px;
+}
+.sec-2 h6{
+    text-transform: uppercase;
+    font-family: Montserrat ;
+    font-weight: 500;
+    color: var(--darkgrayishblue);
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.sec-2 h1{
+    font-family: Fraunces;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--verydarkblue);
+}
+.sec-2 h5{
+    font-family: Montserrat ;
+    font-weight: 500;
+    color: var(--darkgrayishblue);
+    margin-bottom: 35px;
+}
+.del {
+    text-decoration: line-through;
+    font-family: Montserrat ;
+    color: var(--darkgrayishblue);
+    font-size: 14px;
+    margin-left: 20px;
+    vertical-align:4px;
+    
+}
+.now{
+    color: var(--darkcyan);
+    font-size: 27px;
+    font-family: fraunces;
+}
+button{
+    margin-top: 15px;
+    color: var(--white);
+    border: none;
+    background-color: var(--darkcyan);
+    background-image: url(../images/icon-cart.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 13px 0;
+    background-position: 88px ;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: var(--verydarkcyan);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
