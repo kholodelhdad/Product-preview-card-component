@@ -23,12 +23,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
-    height: 100vh;
+    padding: 0.5rem;
+    /* padding: 25px; */
+    height: 90vh;
 }
 main{
     background-color: var(--white);
-    width: 74%;
+    width: 21.5Rem;
     display: flex;
     flex-direction: column;
     border-radius: 11px;
@@ -37,58 +38,61 @@ main{
     -ms-border-radius: 11px;
     -o-border-radius: 11px;
 }
-.sec-1 img {
-    max-width: 100%;
+.sec-1{
+    background-image: url(../images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
     border-top-right-radius: 11px;
     border-top-left-radius: 11px;
 }
+
 .sec-2{
-    padding: 15px 20px 23px 20px;
+    padding: 1rem 1.5rem 1.8rem 1.5rem;
 }
 .sec-2 h6{
     text-transform: uppercase;
     font-family: Montserrat ;
     font-weight: 500;
     color: var(--darkgrayishblue);
-    letter-spacing: 5px;
-    margin-bottom: 10px;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.9rem;
 }
 .sec-2 h1{
     font-family: Fraunces;
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     color: var(--verydarkblue);
 }
 .sec-2 h5{
     font-family: Montserrat ;
     font-weight: 500;
     color: var(--darkgrayishblue);
-    margin-bottom: 35px;
+    margin-bottom: 2.6rem;
 }
 .del {
     text-decoration: line-through;
     font-family: Montserrat ;
     color: var(--darkgrayishblue);
-    font-size: 14px;
-    margin-left: 20px;
-    vertical-align:4px;
+    font-size: 0.9rem;
+    margin-left: 1.3rem;
+    vertical-align:0.3rem;
     
 }
 .now{
     color: var(--darkcyan);
-    font-size: 27px;
+    font-size: 1.7rem;
     font-family: fraunces;
 }
 button{
-    margin-top: 15px;
+    margin-top: 0.8rem;
     color: var(--white);
     border: none;
     background-color: var(--darkcyan);
-    background-image: url(../images/icon-cart.svg);
     background-repeat: no-repeat;
     width: 100%;
-    padding: 13px 0;
-    background-position: 88px ;
+    padding: 0.8rem 0;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -103,3 +107,27 @@ button:hover{
 
 .attribution { font-size: 11px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) {
+    main{
+        flex-direction: row;
+        width: 35rem;
+    }
+    .sec-1{
+        background-image: url(../images/image-product-desktop.jpg);
+        background-position:top;
+        background-size: cover;
+        height: 26rem;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 11px;
+        border-bottom-left-radius: 11px;
+        flex-basis: 50%;
+    }
+    
+    .sec-2{
+        flex-basis: 50%;
+        padding: 2.5rem 2.4rem 1.8rem 1.5rem;
+    }
+    }
